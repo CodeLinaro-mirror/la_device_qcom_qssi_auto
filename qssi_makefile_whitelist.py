@@ -4,40 +4,40 @@
 FAILED_FILEPATHS_WHITELIST = {
     # NOTE: these files are from QSSI builds
     "vendor/qcom/opensource/audio-hal/primary-hal/configs/qssi/qssi.mk",
-    "vendor/qcom/proprietary/android-perf/profiles.mk",
-    "vendor/qcom/proprietary/chi-cdk/product.mk",
-    "vendor/qcom/proprietary/commonsys/qrdplus/sva/products.mk",
-    "vendor/qcom/proprietary/commonsys/voiceui/products.mk",
-    "vendor/qcom/proprietary/mm-audio-internal/dolby/dax/device/dax2_common_hw.mk",
-    "vendor/qcom/proprietary/prebuilt_ASAN/target/product/pineapple/prebuilt.mk",
-    "vendor/qcom/proprietary/prebuilt_ASAN/target/product/qssi_auto/prebuilt.mk",
-    "vendor/qcom/proprietary/prebuilt_grease/target/common/prebuilt.mk",
-    "vendor/qcom/proprietary/prebuilt_grease/target/product/pineapple/prebuilt.mk",
-    "vendor/qcom/proprietary/prebuilt_grease/target/product/qssi_auto/prebuilt.mk",
-    "vendor/qcom/proprietary/prebuilt_HY11/target/common/prebuilt.mk",
-    "vendor/qcom/proprietary/prebuilt_HY11/target/product/pineapple/prebuilt.mk",
-    "vendor/qcom/proprietary/prebuilt_HY11/target/product/qssi_auto/prebuilt.mk",
-    "vendor/qcom/proprietary/prebuilt_HY22/target/common/prebuilt.mk",
-    "vendor/qcom/proprietary/prebuilt_HY22/target/product/pineapple/prebuilt.mk",
-    "vendor/qcom/proprietary/prebuilt_HY22/target/product/qssi_auto/prebuilt.mk",
-    "vendor/qcom/proprietary/qrdplus/China/ChinaMobile/products.mk",
-    "vendor/qcom/proprietary/qrdplus/China/ChinaTelecom/products.mk",
-    "vendor/qcom/proprietary/qrdplus/China/ChinaUnicom/products.mk",
-    "vendor/qcom/proprietary/qrdplus/China/CTA/products.mk",
-    "vendor/qcom/proprietary/qrdplus/Extension/products.mk",
-    "vendor/qcom/proprietary/qrdplus/InternalUseOnly/DuerosSDK/products.mk",
-    "vendor/qcom/proprietary/resource-overlay/overlay.mk",
+    "$QCPATH/android-perf/profiles.mk",
+    "$QCPATH/chi-cdk/product.mk",
+    "$QCPATH/commonsys/qrdplus/sva/products.mk",
+    "$QCPATH/commonsys/voiceui/products.mk",
+    "$QCPATH/mm-audio-internal/dolby/dax/device/dax2_common_hw.mk",
+    "$QCPATH/prebuilt_ASAN/target/product/pineapple/prebuilt.mk",
+    "$QCPATH/prebuilt_ASAN/target/product/qssi_auto/prebuilt.mk",
+    "$QCPATH/prebuilt_grease/target/common/prebuilt.mk",
+    "$QCPATH/prebuilt_grease/target/product/pineapple/prebuilt.mk",
+    "$QCPATH/prebuilt_grease/target/product/qssi_auto/prebuilt.mk",
+    "$QCPATH/prebuilt_HY11/target/common/prebuilt.mk",
+    "$QCPATH/prebuilt_HY11/target/product/pineapple/prebuilt.mk",
+    "$QCPATH/prebuilt_HY11/target/product/qssi_auto/prebuilt.mk",
+    "$QCPATH/prebuilt_HY22/target/common/prebuilt.mk",
+    "$QCPATH/prebuilt_HY22/target/product/pineapple/prebuilt.mk",
+    "$QCPATH/prebuilt_HY22/target/product/qssi_auto/prebuilt.mk",
+    "$QCPATH/qrdplus/China/ChinaMobile/products.mk",
+    "$QCPATH/qrdplus/China/ChinaTelecom/products.mk",
+    "$QCPATH/qrdplus/China/ChinaUnicom/products.mk",
+    "$QCPATH/qrdplus/China/CTA/products.mk",
+    "$QCPATH/qrdplus/Extension/products.mk",
+    "$QCPATH/qrdplus/InternalUseOnly/DuerosSDK/products.mk",
+    "$QCPATH/resource-overlay/overlay.mk",
 }
 
 SHELL_WHITELIST = {
     "device/qcom/sepolicy/SEPolicy.mk",
     "vendor/qcom/defs/product-defs/system/wigig-product.mk",
-    "vendor/qcom/proprietary/common/create_files.mk",
-    "vendor/qcom/proprietary/commonsys/openclwrapper/Android.mk",
+    "$QCPATH/common/create_files.mk",
+    "$QCPATH/commonsys/openclwrapper/Android.mk",
 }
 
 RM_WHITELIST = {
-    "vendor/qcom/proprietary/common/scripts/Android.mk",
+    "$QCPATH/common/scripts/Android.mk",
 }
 
 LOCAL_COPY_HEADERS_WHITELIST = {}
@@ -56,22 +56,22 @@ KERNEL_WHITELIST = {}
 
 FOREACH_WHITELIST = {
     "vendor/qcom/opensource/core-utils/build/utils.mk",
-    "vendor/qcom/proprietary/common/config/device-vendor-qssi.mk",
-    "vendor/qcom/proprietary/common/config/device-vendor-SDM845-pureAOSP.mk",
-    "vendor/qcom/proprietary/common-noship/build/generate_extra_images_prop.mk",
+    "$QCPATH/common/config/device-vendor-qssi.mk",
+    "$QCPATH/common/config/device-vendor-SDM845-pureAOSP.mk",
+    "$QCPATH/common-noship/build/generate_extra_images_prop.mk",
 }
 
 MACRO_WHITELIST = {
     "device/qcom/sepolicy/SEPolicy.mk",
     "vendor/qcom/opensource/commonsys/display/config/display-product-commonsys.mk",
-    "vendor/qcom/proprietary/common/config/device-vendor-qssi.mk",
-    "vendor/qcom/proprietary/common/config/device-vendor-SDM845-pureAOSP.mk",
-    "vendor/qcom/proprietary/common-noship/etc/device-vendor-noship.mk",
-    "vendor/qcom/proprietary/common-noship/etc/device-vendor-noship-SDM845-pureAOSP.mk",
-    "vendor/qcom/proprietary/common-noship/etc/device-vendor-qssi-noship.mk",
-    "vendor/qcom/proprietary/commonsys/android-perf-noship/config/perf-product-system-proprietary.mk",
-    "vendor/qcom/proprietary/commonsys/telephony-build/build/telephony_system_product.mk",
-    "vendor/qcom/proprietary/commonsys-intf/data/dpm_system_product_noship.mk",
+    "$QCPATH/common/config/device-vendor-qssi.mk",
+    "$QCPATH/common/config/device-vendor-SDM845-pureAOSP.mk",
+    "$QCPATH/common-noship/etc/device-vendor-noship.mk",
+    "$QCPATH/common-noship/etc/device-vendor-noship-SDM845-pureAOSP.mk",
+    "$QCPATH/common-noship/etc/device-vendor-qssi-noship.mk",
+    "$QCPATH/commonsys/android-perf-noship/config/perf-product-system-proprietary.mk",
+    "$QCPATH/commonsys/telephony-build/build/telephony_system_product.mk",
+    "$QCPATH/commonsys-intf/data/dpm_system_product_noship.mk",
 }
 
 OVERRIDE_WHITELIST = {
@@ -82,6 +82,6 @@ OVERRIDE_WHITELIST = {
 SOONG_WHITELIST = {
     "device/qcom/qssi_auto/base.mk",
     "vendor/qcom/opensource/commonsys/display/config/display-product-commonsys.mk",
-    "vendor/qcom/proprietary/commonsys-intf/bluetooth/bt-system-proprietary-product.mk",
+    "$QCPATH/commonsys-intf/bluetooth/bt-system-proprietary-product.mk",
     "vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk",
 }
