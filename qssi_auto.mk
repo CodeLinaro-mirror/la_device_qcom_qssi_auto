@@ -6,7 +6,6 @@
 
 TARGET_BOARD_PLATFORM := qssi
 TARGET_BOOTLOADER_BOARD_NAME := qssi_auto
-TARGET_BOARD_TYPE := auto
 TARGET_BOARD_SUFFIX := _auto
 
 # Opt out of 16K alignment changes
