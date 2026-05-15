@@ -22,7 +22,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CarLauncher \
     CarMapsPlaceholder \
-    SecondaryBluetooth
+    SecondaryBluetooth \
+    Mms \
+    TeleService
 
 # Enable MqttListener if device support B2C
 ifeq ($(TARGET_SUPPORT_B2C), true)
